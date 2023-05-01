@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
+        login: "url('/src/assests/images/bg/login-image.png')",
       }),
     },
     fontFamily: {

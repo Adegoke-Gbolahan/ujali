@@ -2,11 +2,13 @@ import React from "react";
 import "./index.css";
 import Navbar from "./components/NavBar/index";
 import FoodCard from "./components/Cards/foodCard";
+import LoginCard from "./components/Cards/Login";
+import Register from "./components/Cards/Register"; 
 import TextHeader from "./components/customHeader";
 import Testimonial from "./components/testimonial";
 import SubscribeNow from "./components/SubscribeNow";
 import HowItWorks from "./components/Cards/HowItWorks";
-
+import ForgetPassword from "./components/Cards/ForgetPassword";
 import howItWork1 from "./assests/images/how-it-work/how-it-work-food.png";
 import howItWork2 from "./assests/images/how-it-work/how-it-work-food-2.png";
 import howItWork3 from "./assests/images/how-it-work/how-it-work-food-3.png";
@@ -14,9 +16,16 @@ function App() {
   return (
     <>
       <Navbar />
+      <div className="container mx-auto flex flex-wrap justify-center gap-4 mt-10">
+        <LoginCard />
+        <ForgetPassword />
+        <Register />
+      </div>
       <div className="container mx-auto ">
         <TextHeader />
       </div>
+
+      
       <div className="container mx-auto flex flex-wrap justify-center gap-4 mt-10">
         <HowItWorks
           headerImg={howItWork1}
